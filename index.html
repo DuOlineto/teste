@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Hortifrúti - Vendas Online</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Meu Hortifrúti - Vendas Online</h1>
+    <nav>
+        <ul>
+            <li><a href="#catalogo">Catálogo</a></li>
+            <li><a href="#carrinho">Carrinho</a></li>
+            <li><a href="#login">Login</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="catalogo">
+    <h2>Catálogo de Produtos</h2>
+    <div class="produto">
+        <img src="caminho-para-imagem-produto.jpg" alt="Nome do Produto">
+        <h3>Nome do Produto</h3>
+        <p>Descrição do produto.</p>
+        <p>Preço: R$ XX,XX</p>
+        <button class="btn-add-cart">Adicionar ao Carrinho</button>
+    </div>
+    <!-- Repetir a estrutura acima para cada produto do catálogo -->
+</section>
+
+<section id="carrinho">
+    <h2>Carrinho de Compras</h2>
+    <div id="lista-carrinho">
+        <!-- Lista de produtos no carrinho -->
+    </div>
+    <div id="total-carrinho">
+        <p>Total: R$ XX,XX</p>
+        <button class="btn-finalizar-compra">Finalizar Compra</button>
+    </div>
+</section>
+
+<section id="login">
+    <h2>Login</h2>
+    <form id="form-login">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required>
+        <button type="submit">Entrar</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2024 Meu Hortifrúti - Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
