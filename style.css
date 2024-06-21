@@ -1,106 +1,135 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-:root{
-    
-    color: white;
-    background-color: #f2f2f2;
-}
-
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f2f2f2;
-    padding: 20px;
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;  
+    flex-direction: column;
+    justify-content: flex-start;
+    background: url(assets/bg\ img.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 header {
-    background-color: #48c84c;
-    color: white;
-    padding: 10px;
+    position: relative;
+    top: 0;
+    width: 100%;
+    padding: 30px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-nav ul {
-    list-style-type: none;
+header .logo {
+    position: relative;
+    color: #000;
+    font-size: 30px;
+    text-decoration:none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px;
 }
 
-nav ul li {
-    display: inline-block;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: white;
+header nav a{
+    color: #000;
     text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 2px 15px;
+    border-radius: 20px;
+    transition: 0.3s;
+    transition-property: background;
 }
 
-section {
+header nav a:not(:last-child){
+    margin-right: 30px;
+}
+
+header nav a:hover {
+    background: #fff;
+    color: #000;
+}
+
+
+.content {
+    max-width: 650px;
+    margin: 200px 100px
+}
+
+.content .info h2 {
+    color: #670574;
+    font-size: 55px;
+    text-transform: uppercase;
+    font-weight: 800px;
+    letter-spacing: 2px;
+    line-height: none;
     margin-bottom: 30px;
 }
 
-.produto {
-    background-color: #fff;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+.content .info h2 span {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 600;
 }
 
-.produto img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
+
+.content .info p {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 40px;
 }
 
-#lista-carrinho {
-    margin-bottom: 10px;
-}
-
-#total-carrinho {
-    background-color: #fff;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
-}
-
-form {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
-}
-
-form label {
-    display: block;
-    margin-bottom: 10px;
-}
-
-form input[type="email"],
-form input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-}
-
-form button {
+.content .info-btn {
+    color: #fff;
+    background: #226A80;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
     padding: 10px 20px;
-    background-color: #48c84c;
-    color: white;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+    transition-property: background;
 }
 
-form button:hover {
-    background-color: #48c84c;
+
+.content .info-btn:hover {
+    background: #0C4F60;
 }
+
+
+.media-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+}
+
+.media-icons a{
+    position: relative;
+    color: #111;
+    font-size: 25px;
+    transition: 0.3s;
+    transition-property: transform;
+}
+
+.media-icons a:not(:last-child){
+    margin-right: 60px;
+}
+
+.media-icons a:hover {
+    transform: scale(1.5);
+}
+
+
+/* Responsividade  */
